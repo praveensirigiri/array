@@ -1,0 +1,34 @@
+<!-- 1)Add elements to an array and iterate using for loop and for in loop and for of loop
+Create an array of your favorite movies and iterate an array  to the console. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+</head>
+<body>
+    <script>
+        let Movies = ["Athadu", "Kalki", "Devara"];
+        Movies.push("Tillu Square");
+        Movies.unshift("Saripodhaa Sanivaaram");
+        Movies.splice(2, 0, "Eagle"); 
+
+        console.log("Using for loop:");
+        for (let i = 0; i < Movies.length; i++) {
+          console.log(Movies[i]);
+        }
+
+        console.log("\nUsing for...in loop:");
+        for (let index in Movies) {
+          console.log(index+ " : " +Movies[index]);
+        }
+
+        console.log("\nUsing for...of loop:");
+        for (let movie of Movies) {
+          console.log(movie);
+        }
+    </script>
+</body>
+</html>
